@@ -1,6 +1,17 @@
 # projetRPG
 ## Division du travail
-1. Giuseppe : Perso et stats
-2. Alex :  Exploration/Salles
-3. Logan : Objets et énigmes
-4. Louis : Combat
+### Giuseppe : Perso et stats
+
+HP et ATK
+
+### Alex :  Exploration/Salles
+
+Salles (spawn + N/S/E/O)
+
+### Logan : Objets et énigmes
+énigmes simples avec input, si énigme réussie --> potion
+
+### Louis : Combat
+créer ennemis + système de combat
+premier tour random
+
