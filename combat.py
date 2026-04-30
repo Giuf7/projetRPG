@@ -1,3 +1,6 @@
+import all from personage.py
+import random
+
 #Ajout des stats des monstres
 atkMonstre1 = 10
 hpMonstre1 = 40
@@ -8,7 +11,6 @@ hpMonstre2 = 30
 nomMonstre2 = "Bandit"
 
 #Création de la fonction
-import random
 def combattreMonstre1():
     hp = joueurhp
     atk = joueuratk
@@ -76,4 +78,3 @@ def combattreMonstre2():
             print("Le monstre est vaincu!")
         elif hp <= 0:
              print("Le monstre a gagné!")
-combattreMonstre2()
