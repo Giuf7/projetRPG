@@ -16,7 +16,7 @@ def prendre_objet_ouest():
     inventaire = objet_salle_ouest
     print(f"Vous avez ajouté {objet_salle_ouest} à votre inventaire")
 
-def resoudre_enigme_est ():
+def resoudre_enigme_est():
     print("Vous entrez dans la salle est et vous apercevez des écritures sur le mur du fond. Il s'agit d'une énigme !")
     print(enigme_salle_est)
 
@@ -32,7 +32,7 @@ def resoudre_enigme_est ():
     else :
         print("C'est la mauvaise réponse, vous êtes expulsé de la salle")
 
-def resoudre_enigme_ouest ():
+def resoudre_enigme_ouest():
     print("Vous entrez dans la salle ouest et vous apercevez des écritures sur le mur du fond. Il s'agit d'une énigme !")
     print(enigme_salle_ouest)
 
