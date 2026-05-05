@@ -24,8 +24,8 @@ def resoudre_enigme_est():
 
     if reponse_user_est == reponse_salle_est.lower() : 
         print(f"C'est la bonne réponse. Une {objet_salle_est} tombe au sol.")
-        reponse_ramassage_objet =  bool(input("Voulez-vous la ramasser ? (True or False):"))
-        if reponse_ramassage_objet:
+        reponse_ramassage_objet =  input("Voulez-vous la ramasser ? (oui ou non):")
+        if reponse_ramassage_objet == "oui":
             prendre_objet_est()
         else:
             print("Vous sortez de la salle sans prendre l'objet")
@@ -40,10 +40,12 @@ def resoudre_enigme_ouest():
 
     if reponse_salle_ouest.lower() == reponse_user_ouest: 
         print(f"C'est la bonne réponse. Une {objet_salle_ouest} tombe au sol.")
-        reponse_ramassage_objet =  bool(input("Voulez-vous la ramasser ? (True or False):"))
-        if reponse_ramassage_objet:
+        reponse_ramassage_objet =  input("Voulez-vous la ramasser ? (oui ou non):")
+        if reponse_ramassage_objet == "oui":
             prendre_objet_ouest()
         else:
             print("Vous sortez de la salle sans prendre l'objet")
     else :
         print("C'est la mauvaise réponse, vous êtes expulsé de la salle")
+
+print(resoudre_enigme_est())
