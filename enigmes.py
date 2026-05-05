@@ -48,4 +48,3 @@ def resoudre_enigme_ouest():
     else :
         print("C'est la mauvaise réponse, vous êtes expulsé de la salle")
 
-print(resoudre_enigme_est())
