@@ -8,11 +8,11 @@ objet_salle_est = "potion"
 objet_salle_ouest = "épée"
 
 
-def prendre_objet_est():
+def prendre_objet_est(inventaire):
     inventaire = objet_salle_est
     print(f"Vous avez ajouté {objet_salle_est} à votre inventaire")
 
-def prendre_objet_ouest(): 
+def prendre_objet_ouest(inventaire): 
     inventaire = objet_salle_ouest
     print(f"Vous avez ajouté {objet_salle_ouest} à votre inventaire")
 
