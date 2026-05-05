@@ -78,5 +78,3 @@ def combattreMonstre2():
             print("Le monstre est vaincu!")
         elif joueurhp <= 0:
              print("Le monstre a gagné!")
-
-combattreMonstre1()
