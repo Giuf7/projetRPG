@@ -10,7 +10,7 @@ atkMonstre2 = 5
 hpMonstre2 = 30
 nomMonstre2 = "Bandit"
 
-#Création de la fonction
+#Création de la fonction pour combattre le premier monstre
 def combattreMonstre1():
     joueurhp = hp
     joueuratk = atk
@@ -44,7 +44,8 @@ def combattreMonstre1():
             print("Le monstre est vaincu!")
         elif joueurhp <= 0:
              print("Le monstre a gagné!")
-        
+
+#Création de la fonction pour combattre le 2e monstre
 def combattreMonstre2():
     joueurhp = hp
     joueuratk = atk
