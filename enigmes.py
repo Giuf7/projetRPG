@@ -1,4 +1,4 @@
-from personnage import inventaire
+from personnage import inventaire, afficher_inventaire
 
 enigme_salle_est = "Je suis toujours devant toi, mais tu ne peux jamais me voir. Qui suis-je ?"
 reponse_salle_est = "le futur"
@@ -47,4 +47,4 @@ def resoudre_enigme_ouest():
     else :
         print("C'est la mauvaise réponse, vous êtes expulsé de la salle")
 
-print(resoudre_enigme_est())
+resoudre_enigme_est()
