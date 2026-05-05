@@ -22,7 +22,7 @@ def resoudre_enigme_est():
 
     reponse_user_est = print(input("Quel est votre réponse ?: "))
 
-    if reponse_salle_est == reponse_user_est: 
+    if reponse_salle_est.lower() == reponse_user_est: 
         print(f"C'est la bonne réponse. Une {objet_salle_est} tombe au sol.")
         reponse_ramassage_objet =  bool(print(input("Voulez-vous la ramasser ? (True or False):")))
         if reponse_ramassage_objet:
@@ -38,7 +38,7 @@ def resoudre_enigme_ouest():
 
     reponse_user_ouest = print(input("Quel est votre réponse ?: "))
 
-    if reponse_salle_ouest == reponse_user_ouest: 
+    if reponse_salle_ouest.lower() == reponse_user_ouest: 
         print(f"C'est la bonne réponse. Une {objet_salle_ouest} tombe au sol.")
         reponse_ramassage_objet =  bool(print(input("Voulez-vous la ramasser ? (True or False):")))
         if reponse_ramassage_objet:
