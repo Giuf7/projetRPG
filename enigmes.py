@@ -6,14 +6,13 @@ enigme_salle_ouest = "Je peux être cassé sans jamais être touché. Qui suis-j
 reponse_salle_ouest = "le silence"
 objet_salle_est = "potion"
 objet_salle_ouest = "épée"
-inv = inventaire
 
-def prendre_objet_est(inv):
-    inv = objet_salle_est
+def prendre_objet_est(inventaire):
+    inventaire = objet_salle_est
     print(f"Vous avez ajouté {objet_salle_est} à votre inventaire")
 
-def prendre_objet_ouest(inv): 
-    inv = objet_salle_ouest
+def prendre_objet_ouest(inventaire): 
+    inventaire = objet_salle_ouest
     print(f"Vous avez ajouté {objet_salle_ouest} à votre inventaire")
 
 def resoudre_enigme_est():
@@ -26,7 +25,7 @@ def resoudre_enigme_est():
         print(f"C'est la bonne réponse. Une {objet_salle_est} tombe au sol.")
         reponse_ramassage_objet =  input("Voulez-vous la ramasser ? (oui ou non):")
         if reponse_ramassage_objet == "oui":
-            prendre_objet_est()
+            prendre_objet_est(inventaire)
         else:
             print("Vous sortez de la salle sans prendre l'objet")
     else :
@@ -42,7 +41,7 @@ def resoudre_enigme_ouest():
         print(f"C'est la bonne réponse. Une {objet_salle_ouest} tombe au sol.")
         reponse_ramassage_objet =  input("Voulez-vous la ramasser ? (oui ou non):")
         if reponse_ramassage_objet == "oui":
-            prendre_objet_ouest()
+            prendre_objet_ouest(inventaire)
         else:
             print("Vous sortez de la salle sans prendre l'objet")
     else :
