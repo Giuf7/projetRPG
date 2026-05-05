@@ -6,14 +6,14 @@ enigme_salle_ouest = "Je peux être cassé sans jamais être touché. Qui suis-j
 reponse_salle_ouest = "le silence"
 objet_salle_est = "potion"
 objet_salle_ouest = "épée"
+inv = inventaire
 
-
-def prendre_objet_est(inventaire):
-    inventaire = objet_salle_est
+def prendre_objet_est(inv):
+    inv = objet_salle_est
     print(f"Vous avez ajouté {objet_salle_est} à votre inventaire")
 
-def prendre_objet_ouest(inventaire): 
-    inventaire = objet_salle_ouest
+def prendre_objet_ouest(inv): 
+    inv = objet_salle_ouest
     print(f"Vous avez ajouté {objet_salle_ouest} à votre inventaire")
 
 def resoudre_enigme_est():
