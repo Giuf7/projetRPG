@@ -1,17 +1,19 @@
+import random
+
 # Initialisation des variables
-nom = ""
-atk = 0
-hp = 0
+nom = str(input("Quel est le nom de ton personnage ? : "))
+atk = random.randrange(10,20)
+hp = random.randrange(100,120)
 inventaire = []
 
 def creation_personnage():
     global nom, atk, hp, inventaire
     
-    nom = str(input("Quel est le nom de ton personnage ? : "))
-    atk = 10
-    hp = 100
-    inventaire = [""]
-    print(f"\nBienvenue, {nom} ! Ton aventure commence maitenant.")
+    nom
+    atk
+    hp
+    inventaire
+    print(f"\nBienvenue, {nom} ! Ton aventure commence maintenant.")
 
 def afficher_stats():
     print(f"--- Stats de {nom} ---")
@@ -19,3 +21,6 @@ def afficher_stats():
     print(f"Attaque : {atk}")
     print(f"Inventaire : {inventaire}")
     print("----------------------")
+
+def afficher_inventaire():
+    print(f"Inventaire: {inventaire}")
