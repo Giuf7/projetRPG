@@ -1,24 +1,22 @@
-sallesDictionnaire = {
-    "nord" : "Combat",
-    "sud" : "Combat",
-    "est" : "Enigme",
-    "ouest" : "Enigme"
-}
-
-
+from combat import combattreMonstre1, combattreMonstre2
+from enigmes import resoudre_enigme_est, resoudre_enigme_ouest
 
 def deplacer() :
     direction = input("Où allez-vous ? ")
-    if direction.lower() == "nord" or  direction.lower() == "sud" or direction.lower() == "est" or  direction.lower() == "ouest":
-        return  sallesDictionnaire[direction.lower()]
-    else :
-        print("Ce n'est pas une diretion")
+    match direction.lower():
+        case "nord":
+            combattreMonstre1()
+        case "sud":
+            combattreMonstre2()
+        case "est":
+            resoudre_enigme_est()
+        case "ouest":
+            resoudre_enigme_ouest()
+        case _:
+            print("Mauvaise destination")
 
 def  afficher_salle(rencontre) :
     if rencontre == "Combat" :
         print("")
     if rencontre == "Enigme" : 
         print("")
-
-rencontre = deplacer()
-testvarible = afficher_salle(rencontre)
