@@ -46,5 +46,3 @@ def resoudre_enigme_ouest():
             print("Vous sortez de la salle sans prendre l'objet")
     else :
         print("C'est la mauvaise réponse, vous êtes expulsé de la salle")
-
-resoudre_enigme_est()
